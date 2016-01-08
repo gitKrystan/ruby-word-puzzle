@@ -3,7 +3,7 @@ class String
 
   define_method(:make_puzzle) do
     puzzle_letters = []
-    letters = self.split("")
+    letters = split("")
 
     letters.each() do |character|
       if vowels.include?(character.downcase())
