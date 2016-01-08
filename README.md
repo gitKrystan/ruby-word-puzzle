@@ -14,6 +14,8 @@ This website takes a string input by the user and replaces vowels in the string 
 
 *Puzzle Output:* "B-l--v- y-- c-n -nd y--'r- h-lfw-y th-r-. Th--d-r- R--s-v-lt"
 
+On this new page, another user may attempt to guess the solution to the puzzle. A third page reports whether or not the proposed solution is correct.
+
 ## Setup
 
 Install by cloning [this repository](https://github.com/gitKrystan/ruby-word-puzzle.git).
