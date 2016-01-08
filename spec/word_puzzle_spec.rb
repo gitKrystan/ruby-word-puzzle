@@ -23,4 +23,9 @@ describe('String#make_puzzle') do
     expect('All work and no play makes Jack a dull boy'.make_puzzle())
       .to(eq('-ll w-rk -nd n- pl-y m-k-s J-ck - d-ll b-y'))
   end
+
+  it('returns a string with punctuation') do
+    expect("Believe you can and you're halfway there. Theodore Roosevelt".make_puzzle())
+      .to(eq("B-l--v- y-- c-n -nd y--'r- h-lfw-y th-r-. Th--d-r- R--s-v-lt"))
+  end
 end
