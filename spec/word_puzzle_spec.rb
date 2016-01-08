@@ -29,3 +29,9 @@ describe('String#make_puzzle') do
       .to(eq("B-l--v- y-- c-n -nd y--'r- h-lfw-y th-r-. Th--d-r- R--s-v-lt"))
   end
 end
+
+describe('String#guess_correct?') do
+  it('returns true when the guess is identical to the original') do
+    expect('myrrh'.guess_correct?('myrrh')).to(eq(true))
+  end
+end

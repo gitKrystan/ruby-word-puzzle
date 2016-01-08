@@ -15,4 +15,8 @@ class String
 
     return puzzle_letters.join()
   end
+
+  define_method(:guess_correct?) do |original|
+    self == original
+  end
 end
