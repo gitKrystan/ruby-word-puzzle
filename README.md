@@ -6,6 +6,10 @@
 
 ## Description
 
+To see this code in action, go to:
+
+[https://krystan-word-puzzle.herokuapp.com/](https://krystan-word-puzzle.herokuapp.com/)
+
 This website takes a string input by the user and replaces vowels in the string with the dash symbol to create a word puzzle to solve. The resulting word puzzle appears on a new page.
 
 **Example:**
