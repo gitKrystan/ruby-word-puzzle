@@ -1,12 +1,10 @@
-<p class=".lead">
-  This word puzzle generator will create a puzzle out of words you input below.
-</p>
-
+<div class="jumbotron">
+  <p class="lead">This word puzzle generator will create a puzzle out of words you input below.</p>
+</div>
 <form action="/puzzle" method="post">
   <div class="form-group">
     <label for="user_string">Input words to turn into a puzzle:</label>
-    <textarea type="text" class="form-control" rows="3" name="user_string" value="user_string">
-    </textarea>
+    <textarea type="text" class="form-control" rows="3" name="user_string" value="user_string"></textarea>
   </div>
   <button type="submit" class="btn btn-default">Generate Puzzle</button>
 </form>

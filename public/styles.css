@@ -1,0 +1,17 @@
+.jumbotron {
+  background-color: #F7CAC9;
+  min-height: 200px;
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default.focus {
+  border-color: #e6e6e6;
+}
+
+.solution-box {
+  background-color: white;
+  opacity: 0.8;
+  padding: 20px;
+  margin-top: 20px;
+}

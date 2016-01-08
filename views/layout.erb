@@ -4,11 +4,17 @@
     <meta charset="utf-8">
     <title>Word Puzzle</title>
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link href="<%= url('/styles.css') %>" rel="stylesheet" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     <div class="container">
-      <h1>Word Puzzle</h1>
+      <div class="page-header">
+        <h4>
+          <span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
+          Word Puzzle
+        </h4>
+      </div>
       <%= yield %>
     </div>
   </body>
