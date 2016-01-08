@@ -18,4 +18,9 @@ describe('String#make_puzzle') do
   it('returns a new string with dashes replacing vowels in multiple words') do
     expect('hello world'.make_puzzle()).to(eq('h-ll- w-rld'))
   end
+
+  it('returns a string with mixed cases when a mixed case string is input') do
+    expect('All work and no play makes Jack a dull boy'.make_puzzle())
+      .to(eq('-ll w-rk -nd n- pl-y m-k-s J-ck - d-ll b-y'))
+  end
 end

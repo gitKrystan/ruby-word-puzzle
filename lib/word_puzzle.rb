@@ -6,7 +6,7 @@ class String
     letters = self.split("")
 
     letters.each() do |character|
-      if vowels.include?(character)
+      if vowels.include?(character.downcase())
         puzzle_letters.push("-")
       else
         puzzle_letters.push(character)
