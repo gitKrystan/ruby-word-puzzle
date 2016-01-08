@@ -8,13 +8,20 @@ get('/') do
 end
 
 post('/puzzle') do
-  original = params.fetch('user_string')
-  @encrypted_puzzle = original.make_puzzle()
+  @original = params.fetch('user_string')
+  @encrypted_puzzle = @original.make_puzzle()
   erb(:puzzle)
 end
 
 post('/solution') do
   @guess = params.fetch('user_guess')
-  @guess_result = "You are correct!"
+  @original = params.fetch('original')
+
+  if @guess.guess_correct?(@original)
+    @guess_result = "You are correct!"
+  else
+    @guess_result = "Sorry, you were not correct!"
+  end
+
   erb(:solution)
 end

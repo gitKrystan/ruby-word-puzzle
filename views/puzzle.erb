@@ -2,7 +2,7 @@
    Solve the puzzle by guessing the words.</p>
 <h2><%= @encrypted_puzzle %></h2>
 
-<form action="/solution" method="post">
+<form action="/solution?original=<%= @original %>" method="post">
   <div class="form-group">
     <label for="user_string">Your guess:</label>
     <textarea type="text" class="form-control" rows="3" name="user_guess" value="user_guess">
