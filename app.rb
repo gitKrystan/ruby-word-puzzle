@@ -7,7 +7,7 @@ get('/') do
   erb(:index)
 end
 
-get('/puzzle') do
+post('/puzzle') do
   @encrypted_puzzle = params.fetch('user_string').make_puzzle()
   erb(:puzzle)
 end
