@@ -5,11 +5,11 @@ class String
     puzzle_letters = []
     letters = split("")
 
-    letters.each() do |character|
-      if vowels.include?(character.downcase())
+    letters.each() do |letter|
+      if vowels.include?(letter.downcase())
         puzzle_letters.push("-")
       else
-        puzzle_letters.push(character)
+        puzzle_letters.push(letter)
       end
     end
 
