@@ -34,4 +34,8 @@ describe('String#guess_correct?') do
   it('returns true when the guess is identical to the original') do
     expect('myrrh'.guess_correct?('myrrh')).to(eq(true))
   end
+
+  it('returns false when the guess does not match the original') do
+    expect('live'.guess_correct?('love')).to(eq(false))
+  end
 end
