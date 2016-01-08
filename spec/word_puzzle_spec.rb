@@ -14,4 +14,8 @@ describe('String#make_puzzle') do
   it('returns a new string with dashes replacing vowels in a single word') do
     expect('frankincense'.make_puzzle()).to(eq('fr-nk-nc-ns-'))
   end
+
+  it('returns a new string with dashes replacing vowels in multiple words') do
+    expect('hello world'.make_puzzle()).to(eq('h-ll- w-rld'))
+  end
 end
