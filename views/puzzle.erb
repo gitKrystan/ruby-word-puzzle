@@ -1,3 +1,12 @@
 <p class=".lead">The following words have their vowels removed.
    Solve the puzzle by guessing the words.</p>
 <h2><%= @encrypted_puzzle %></h2>
+
+<form action="/solution" method="post">
+  <div class="form-group">
+    <label for="user_string">Your guess:</label>
+    <textarea type="text" class="form-control" rows="3" name="user_guess" value="user_guess">
+    </textarea>
+  </div>
+  <button type="submit" class="btn btn-default" value="guess_number">Am I right?</button>
+</form>
