@@ -38,4 +38,8 @@ describe('String#guess_correct?') do
   it('returns false when the guess does not match the original') do
     expect('live'.guess_correct?('love')).to(eq(false))
   end
+
+  it('returns true even if the capitalization is incorrect') do
+    expect("hello world".guess_correct?('Hello world')).to(eq(true))
+  end
 end

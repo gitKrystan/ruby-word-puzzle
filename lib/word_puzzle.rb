@@ -17,6 +17,6 @@ class String
   end
 
   define_method(:guess_correct?) do |original|
-    self == original
+    self.downcase() == original.downcase()
   end
 end
