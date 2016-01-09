@@ -1,6 +1,13 @@
 .jumbotron {
-  background-color: #F7CAC9;
   min-height: 200px;
+}
+
+.jumbotron.correct {
+  background-color: #F7CAC9;
+}
+
+.jumbotron.wrong {
+  background-color: #92A8D1;
 }
 
 .btn-default:hover,

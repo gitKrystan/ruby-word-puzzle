@@ -23,4 +23,13 @@ describe('the puzzle decription path', {:type => :feature}) do
     click_button('Am I right?')
     expect(page).to(have_content('You are correct!'))
   end
+
+  it('processes the user entry and changes the jumbotron color based on the outcome') do
+    visit('/')
+    fill_in('user_string', :with => "Hey there!")
+    click_button('Generate Puzzle')
+    fill_in('user_guess', :with => "hey there!")
+    click_button('Am I right?')
+    expect(page).to(have_css('div.jumbotron.correct'))
+  end
 end

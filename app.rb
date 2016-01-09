@@ -20,9 +20,11 @@ post('/solution') do
   if @guess.guess_correct?(@original)
     @guess_result = "You are correct!"
     @result_icon = '<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>'
+    @result_class = "correct"
   else
     @guess_result = "Sorry, wrong answer!"
     @result_icon = '<span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>'
+    @result_class = "wrong"
   end
 
   erb(:solution)
